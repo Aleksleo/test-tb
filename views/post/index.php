@@ -1,6 +1,5 @@
 <code><?=__FILE__?></code>
 <br>
-<h2><?php echo $hello_var; ?></h2>
 <h1><a href="test">Manuals and tutorials</a></h1>
 <hr>
 <?php if(!empty($posts)): ?>

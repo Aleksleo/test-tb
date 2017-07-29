@@ -14,11 +14,8 @@ class PostController extends AppController
 
     public function actionIndex($name = 'Guest')
     {
-        $hello = 'Hi, ' . $name . '! Suck my big black penis. (C) PHP';
-
         $posts = Posts::find()->select('id, title, text')->all();
         return $this->render('index', [
-            'hello_var' => $hello,
             'posts' => $posts,
             ]);
     }
